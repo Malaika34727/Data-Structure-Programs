@@ -1,0 +1,35 @@
+#include<stdio.h>
+void printmatrix(int matrix[2][2])
+{
+	for(int i=0;i<2;i++)
+	{
+		for(int j=0;j<2;j++)
+		{
+			printf("%d",matrix[i][j]);
+		}
+		printf("\n");
+	}
+void transposematrix(int matrix[2][2],int transpose[2][2])
+{
+	for(int i=0;i<2;i++)
+	{
+		for(int j=0;j<2;j++)
+		{
+			transpose[j][i]=matrix[i][j];
+//			printf("%d",matrix[i][j]);
+		}
+		printf("\n");
+	}
+int main()
+	{
+		int matrix[2][2]={{1,2},{2,3}};
+		int transpose[2][2];
+		printf("ORIGINAL MATRIX:\n");
+		printmatrix(matrix);
+		transposematrix(matrix,transpose);
+		printf("TRANPOSE IS: \n");
+		printmatrix(transpose);
+		return 0;
+		
+	}
+}}
