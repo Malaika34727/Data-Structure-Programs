@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main(){
+	int num[] = {10,20,30,40,50,90};
+	int ans = min(num,6);
+	printf("Minimum value %d", ans);
+	getch();
+}
+int min(int *m,int s)
+{
+	int x;
+	x = *m;
+	int i;
+	while(i<s)
+	{
+		if(x>*(m+i))
+		{
+			x = *(m+i);
+		}
+		i++;
+	}
+	return x;
+}
