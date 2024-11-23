@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	int num[]={24,34,12,44,56,17};
+	for(int i=0;i<6;i++)
+	{
+		printf("\naddress = %u",&num[i]);
+		printf("\telement = %d",num[i]);
+	}
+}
